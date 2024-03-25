@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>List Style Example</title>
+<style>
+ul.custom-list {
+  list-style-type: square; 
+}
+
+ul.no-style {
+  list-style-type: none;
+}
+
+ul.individual-style {
+  list-style-type: none;
+}
+ul.individual-style li {
+  margin-left: 20px; 
+  padding-left: 10px; 
+  position: relative;
+}
+ul.individual-style li::before {
+  content: "\2022"; 
+  color: red; 
+  font-size: 1.5em; 
+  position: absolute;
+  left: 0;
+}
+</style>
+</head>
+<body>
+
+<ul class="custom-list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<ul class="no-style">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<ul class="individual-style">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+</body>
+</html>

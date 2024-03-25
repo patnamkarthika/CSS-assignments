@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Positioning Techniques</title>
+<style>
+    .container {
+        width: 300px;
+        height: 200px;
+        background-color: lightblue;
+        border: 2px solid blue;
+        margin: 20px;
+    }
+
+    .relative {
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    .absolute {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+
+    .fixed {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .sticky {
+        position: sticky;
+        top: 0;
+    }
+</style>
+</head>
+<body>
+<div class="container relative">
+    <h2>Relative Positioning</h2>
+    <p>This element is relatively positioned.</p>
+</div>
+
+<div class="container absolute">
+    <h2>Absolute Positioning</h2>
+    <p>This element is absolutely positioned.</p>
+</div>
+
+<div class="container fixed">
+    <h2>Fixed Positioning</h2>
+    <p>This element is fixed positioned.</p>
+</div>
+
+<div style="height: 1500px; background-color: lightgrey;">
+    <div class="container sticky">
+        <h2>Sticky Positioning</h2>
+        <p>This element is sticky positioned.</p>
+    </div>
+</div>
+</body>
+</html>
